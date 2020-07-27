@@ -9,35 +9,30 @@
     <script src="quiz.js"></script>
 </head>
 <body>
-    <!--title-->
-    <div class="center">
-        <h1>YUI or MOA!?</h1>
-        <h2>Can you figure it out?</h2>
-    </div>
-    
     <!--quiz section-->
+    <!-- this must be the first div-->
     <div class="container">
-        <img id="quiz" src="image/moa/0.jpg">  <!--add more images!!-->
+        <img id="quiz" src="image/yui/28.jpg">  <!--add more images!!-->
+    </div>
+
+    <!--title-->
+    <div class="title">
+        <h1>YUI or MOA!?</h1>
     </div>
 
     <!--select button & score-->
-    <div class="center">
-        <div ><p id="correct">enjoy!</p></div>
-        <button class="yui" onclick="select('yui')">
-            YUI
-        </button>
-        <button class="moa" onclick="select('moa')">
-            MOA
-        </button>
+    <div class="scoreboard">
+        <p id="correct">enjoy!</p>
         <p id="score">0/1</p>
+        <div class="buttons">
+            <button class="yui" onclick="select('yui')">
+                YUI
+            </button>
+            <button class="moa" onclick="select('moa')">
+                MOA
+            </button>
+        </div>
     </div>
-
-	<!--commentbox-->
-	<div class="comments-go-here"></div>
-	<script src="https:comments.yoursite.com/embed.js"
-		 data-schnack-slug="post-slug"
-   		 data-schnack-target=".comments-go-here">
-	</script>
 
     <!--my link-->
     <div class="info">

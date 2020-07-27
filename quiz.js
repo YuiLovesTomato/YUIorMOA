@@ -1,7 +1,14 @@
 //quiz script
-var MAXNUM=2;    //biggest number in image folder
+var MAXNUM=30;    //biggest number in image folder
 var score=0;
 var count=0;
+var usedArr=[];
+
+//device rotate lock
+screen.orientation.lock();
+
+//total amount of quiz
+document.getElementById("score").innerText = String(score)+"/"+String(count);
 
 function select(who) {
     //define variables
@@ -21,17 +28,19 @@ function select(who) {
     //displaying score
     count++;
     document.getElementById("score").innerText = String(score)+"/"+String(count);
+    
+    //storing used pic to array
 
-    //random feature
-    /*
-    store used image's number in some array, and make roll() function to simplify.
-    */
-    if (0==Math.floor(Math.random()*2)) {   //yui folder or moa folder?
+    //random feature: here goes new pic
+    if (0==Math.floor(Math.random()*2)) { //50%
         randDir = 'yui';
     } else {
         randDir = 'moa';
     }
-    randNum = Math.floor(Math.random()*MAXNUM);
+    randNum = 1+Math.floor(Math.random()*MAXNUM);
     newSrc = "image/"+randDir+"/"+randNum+".jpg"
+    if (usedArr.includes(newSrc)) {
+        alert("test");
+    }
     document.getElementById("quiz").src = newSrc;
 }
