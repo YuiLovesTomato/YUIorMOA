@@ -1,2 +1,2 @@
 # yuiormoa
-yui or moa!?
+for mars astronauts.
