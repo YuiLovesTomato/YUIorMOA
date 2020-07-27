@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet"> 
+    <title>YUI or MOA!?</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YUI or MOA!?</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="quiz.js"></script>
 </head>
 <body>
     <!--title-->
@@ -15,20 +17,28 @@
     </div>
     
     <!--quiz section-->
-    <div>
-        <img class="quiz" src="01.jpg">  <!--add more images!!-->
+    <div class="container">
+        <img id="quiz" src="image/moa/0.jpg">  <!--add more images!!-->
     </div>
 
     <!--select button & score-->
     <div class="center">
-        <button class="yui">
+        <div ><p id="correct">enjoy!</p></div>
+        <button class="yui" onclick="select('yui')">
             YUI
         </button>
-        <button class="moa">
+        <button class="moa" onclick="select('moa')">
             MOA
         </button>
-        <p>1/1</p>
+        <p id="score">0/1</p>
     </div>
+
+	<!--commentbox-->
+	<div class="comments-go-here"></div>
+	<script src="https:comments.yoursite.com/embed.js"
+		 data-schnack-slug="post-slug"
+   		 data-schnack-target=".comments-go-here">
+	</script>
 
     <!--my link-->
     <div class="info">

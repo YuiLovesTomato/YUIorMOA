@@ -1,3 +1,4 @@
+//node.js server setting
 var http = require('http');
 var fs = require('fs');
 var hostname = '127.0.0.1';
@@ -18,4 +19,3 @@ var app = http.createServer(function(request,response){
 });
 app.listen(3000);
 console.log('Server running at http://'+hostname+':'+port);
- 

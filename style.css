@@ -1,16 +1,9 @@
-.quiz {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width: 80%;
-    height: auto;
-    max-width: 500px;
+a {
+    color: hotpink;
 }
 
-quiz {
-    margin-left: 10%;
-    height: auto;
-    width: 80%;
+h1, h2, p {
+    font-family: 'Lato', sans-serif;
 }
 
 .center {
@@ -20,23 +13,25 @@ quiz {
     text-align: center;
 }
 
+#quiz {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+    height: auto;
+    max-width: 500px;
+}
+
 .info {
-    position:relative;
+    position: absolute;
     text-align: center;
     bottom:10px;
     left: 50%;
     margin: 0 auto;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
 }
 
-h1, h2, p {
-    font-family: 'Lato', sans-serif;
-}
-
-a {
-    color: hotpink;
-}
-
+/* button size optimization required */
 button {
     cursor: pointer;
     display: inline-block;
